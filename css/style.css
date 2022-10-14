@@ -1,0 +1,54 @@
+.p {
+    width: 600px;
+    height: 600px;
+    background: red;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 600px;
+    /*margin:T/B R/L*/
+    margin: 100px auto;
+    position: relative;
+}
+/*Descendant selector
+parent child{
+    property:value;
+}*/
+.p .c {
+    /* here we are using descendant selector*/
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    border: 10px maroon outset;
+    position: absolute;
+    font-size: 4em !important;
+    transform: rotate(0deg);
+    transition: all 1s linear;
+}
+.p:hover .c {
+    transform: rotate(360deg);
+}
+.p .c1 {
+    background: green;
+    top: 0px;
+    left: 0px;
+    transform-origin: left top;
+}
+.p .c2 {
+    background: yellow;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left bottom;
+}
+.p .c3 {
+    background: purple;
+    top: 0px;
+    right: 0px;
+    transform-origin: top right;
+}
+.p .c4 {
+    background: blue;
+    bottom: 0px;
+    right: 0px;
+    transform-origin: bottom right;
+}
